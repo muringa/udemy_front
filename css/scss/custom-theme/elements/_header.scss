@@ -1,0 +1,34 @@
+#header-main {
+	background: $secondary-color;
+	#header-top {
+		float: left;
+		width: 100%;
+	}
+	#header-middle {
+		background: $secondary-color;
+		float: left;
+		width: 100%;
+		padding: 20px 0;
+		#box-logo {
+			color: #fff;
+		}
+	}
+	#header-bottom {
+		background: $primary-color;
+		.first-list-level {
+			display: flex;
+			justify-content: space-between;
+			> li {
+				width: 25%;
+				padding: 15px 0;
+				text-align: center;
+				display: inline-block;
+				float: none;
+				background: transparent;
+				&:hover {
+					background: darken($primary-color, 20%);
+				}
+			}
+		}
+	}
+}
